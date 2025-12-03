@@ -26,3 +26,44 @@ Cada actividad está alojada en su propia carpeta (`actividad02`, `actividad04`,
 
 ## Estructura del Repositorio
 
+/proyecto
+│── index.html
+│── calculadoras_unificadas.css
+│── calculadoras_unificadas.js
+│── /actividades
+│ ├── actividad02/index.html
+│ ├── actividad04/index.html
+│ ├── actividad06/index.html
+│ ├── actividad08/index.html
+│ ├── actividad10/index.html
+│ ├── actividad12/index.html
+│ └── actividad14/index.html
+└── README.md
+
+
+## Funcionalidad
+
+- Cada actividad se puede visualizar directamente en la página principal mediante **iframes**.
+- Los contenedores están diseñados para ser dinámicos y centrados, con efectos de hover y tamaño responsivo.
+- Todo el portafolio comparte un **estilo visual uniforme**, para mantener coherencia en el diseño.
+
+## Tecnologías Utilizadas
+
+- HTML5
+- CSS3 (con diseño responsivo y efectos dinámicos)
+- JavaScript
+
+## Cómo usar el portafolio
+
+1. Clonar el repositorio o descargarlo como ZIP.
+2. Abrir el archivo `index.html` en un navegador moderno.
+3. Hacer clic en cada actividad para interactuar con las calculadoras y animaciones.
+
+---
+
+¡Este portafolio sirve como ejemplo de integración de múltiples proyectos en un solo entorno web interactivo y educativo!
+
+## 👩‍💻 Autor
+
+Proyecto realizado por:  
+**Scarlet Angelina Ruelas Cardeña**
