@@ -1,7 +1,12 @@
+/* ===== Importar fuentes bonitas ===== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Pacifico&display=swap');
+
 /* ===== Estilo general ===== */
 body {
   font-family: 'Arial', sans-serif;
-  background: #f0f2f5;
+  background: linear-gradient(270deg, #fbc2eb, #b2a6fe, #76ffea, #a6f58a);
+  background-size: 800% 800%;
+  animation: gradientBG 20s ease infinite;
   margin: 0;
   padding: 20px;
   display: flex;
@@ -9,10 +14,38 @@ body {
   align-items: center; /* centrado horizontal */
 }
 
+/* ===== Animación de fondo ===== */
+@keyframes gradientBG {
+  0% {background-position:0% 50%;}
+  50% {background-position:100% 50%;}
+  100% {background-position:0% 50%;}
+}
+
 /* ===== Encabezado ===== */
 header {
   text-align: center;
   margin-bottom: 40px;
+}
+
+header h1 {
+  font-family: 'Pacifico', cursive; /* fuente decorativa */
+  font-size: 3em;
+  margin-bottom: 10px;
+  background: linear-gradient(45deg, #ff758c, #ff7eb9, #ffb347, #ffcc70);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+
+header p {
+  font-size: 1.2em;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 10px;
+  background: linear-gradient(45deg, #ff758c, #ff7eb9, #ffb347, #ffcc70);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
 }
 
 /* ===== Contenedor principal ===== */
@@ -27,7 +60,7 @@ header {
 
 /* ===== Cada calculadora ===== */
 .calc-container {
-  background: #ffffff;
+  background: #fc429ccc; /* ligeramente transparente para ver fondo */
   border-radius: 12px;
   width: 90%; /* ocupa 90% del contenedor principal */
   max-width: 900px;
@@ -46,22 +79,24 @@ header {
   box-shadow: 0 12px 30px rgba(0,0,0,0.25);
 }
 
-/* ===== Título ===== */
+/* ===== Título de cada sección ===== */
 .calc-title {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.6em;
+  font-weight: 700;
   background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-  color: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
   width: 100%;
-  padding: 15px 0;
-  font-weight: bold;
-  font-size: 1.3em;
-  letter-spacing: 0.5px;
+  padding: 18px 0;
   border-bottom: 2px solid #ddd;
-  transition: background 0.3s ease;
+  transition: background 0.4s ease, transform 0.3s ease;
 }
 
 .calc-container:hover .calc-title {
   background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+  transform: scale(1.05);
 }
 
 /* ===== Iframe ===== */
